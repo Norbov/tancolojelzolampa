@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent-pedestrial-signal-light{
+    display:  flex;
+    flex-wrap:  nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(199, 199, 199);
+}
+
+.parent-pedestrial-signal-light .pedestrial-signal-light{
+    display:  flex;
+    flex-direction: column;
+    flex-wrap:  nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 770px;
+    height: 770px;
+    background-color: black;
+    border-radius:  15px;
+}
+
+.parent-pedestrial-signal-light .pedestrial-signal-light .row{
+    width: 770px;
+    height: 10px;
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-radius:  5px;
+    position: relative;
+}
+
+.parent-pedestrial-signal-light .pedestrial-signal-light .row .dot{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(95, 95, 95);
+    border-radius:  5px;
+    position: relative;
+}
+
+.parent-pedestrial-signal-light .pedestrial-signal-light .row .dot.grey{
+    background-color: rgb(95, 95, 95);
+}
+
+.parent-pedestrial-signal-light .pedestrial-signal-light .row .dot.red{
+    background-color: red;
+}
